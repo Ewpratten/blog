@@ -8,6 +8,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.retrylife.ca"
 root_url: "https://retrylife.ca"
 
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  math_engine: mathjax
+highlighter: rouge
+
 # Build settings
 plugins:
   - jekyll-feed

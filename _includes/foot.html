@@ -7,3 +7,60 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+
+{% if page.uses contains "katex" %}
+<!-- Load KaTeX -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js" crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"></script>
+
+<!-- Parse the Latex divs with Katex-->
+<script type="text/javascript">
+    $("script[type='math/tex']").replaceWith(
+        function () {
+            var tex = $(this).text();
+            return katex.renderToString(tex, { displayMode: false });
+        });
+
+    $("script[type='math/tex; mode=display']").replaceWith(
+        function () {
+            var tex = $(this).text();
+            return katex.renderToString(tex.replace(/%.*/g, ''), { displayMode: true });
+        });
+</script>
+{% endif %}
+
+{% if page.uses contains "pdf" %}
+<!-- Inline PDF files -->
+<script src="https://unpkg.com/browse/pdfjs-dist@2.4.456/web/pdf_viewer.js"></script>
+{% endif %}
+
+{% if page.uses contains "tikz" %}
+<!-- TikZJax loader -->
+<script src="https://tikzjax.com/v1/tikzjax.js"></script>
+{% endif %}
+
+<!-- Tracking API -->
+<script src="https://api.retrylife.ca/tracking/external/retrylife.ca" async="true"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{site.ga_analytics}}"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', '{{site.ga_analytics}}');
+</script>
+
+
+{% if page.uses contains "twitter" %}
+<!-- Twitter embeds -->
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+{% endif %}
+
+
+{% if page.uses contains "graphs" %}
+<!-- Roughviz -->
+<script src="https://unpkg.com/rough-viz@1.0.5"></script>
+{% endif %}

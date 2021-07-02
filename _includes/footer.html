@@ -1,0 +1,19 @@
+<div id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h3>{{site.title}}</h3>
+                <p>{{site.description}}</p>
+                <a href="{{site.root_url}}/about"><button type="button"
+                        class="btn btn-sm btn-outline-secondary">About Me</button></a>
+            </div>
+            <div class="col-sm footer-socials">
+                {% for social in site.data.socials %}
+                    <a href="{{social.url}}"><i class="fab fa-{{social.icon}}"></i></a>
+                {% endfor %}
+            </div>
+            <div class="col-sm">
+            </div>
+        </div>
+    </div>
+</div>
