@@ -1,9 +1,8 @@
 title: Evan's Blog
 email: your-email@example.com
 description: >- 
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Welcome to the blog portion of my website! 
+  This is where I share project writeups, tutorials, and notes.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.retrylife.ca"
 root_url: "https://retrylife.ca"
