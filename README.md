@@ -1,1 +1,3 @@
-# THIS REPO IS IN ACTIVE DEVELOPMENT, BUT MUST BE PUBLIC FOR A SHORT TIME. PLEASE IGNORE 
+# [blog.retrylife.ca](https://blog.retrylife.ca)
+
+This repo contains the source for my blog.
