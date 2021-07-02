@@ -1,0 +1,15 @@
+---
+layout: empty
+---
+
+<div class="container">
+    <h1>Welcome to my blog!</h1>
+    <h3>This is where I share project writeups, tutorials, and notes.</h3>
+
+    <hr>
+
+    {% for post in site.posts %}
+        {{post.title}}
+    {% endfor %}
+
+</div>
