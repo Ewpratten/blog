@@ -1,0 +1,3 @@
+[submodule "web-common"]
+	path = web-common
+	url = https://github.com/Ewpratten/web-common
