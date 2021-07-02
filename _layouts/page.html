@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body>
+
+    <div id="content" class="container">
+        {{content}}
+    </div>
+
+    <div id="comments">
+        <script src="https://utteranc.es/client.js" repo="ewpratten/blog" issue-term="pathname" label="comments"
+            theme="github-light" crossorigin="anonymous" async>
+            </script>
+    </div>
+
+    {% include foot.html %}
+
+</body>
+
+</html>

@@ -2,14 +2,54 @@
 layout: empty
 ---
 
+<hr style="border-color:var(--color-green);margin:0;border-width:5px;">
+
 <div class="container">
-    <h1>Welcome to my blog!</h1>
-    <h3>This is where I share project writeups, tutorials, and notes.</h3>
+
+    <div id="main-heading" style="text-align: center;margin-top:15vh;margin-bottom: 5vh;">
+        <div style="margin-bottom: 5vh;">
+            <h1>Welcome to my <strong style="color:var(--color-green-darker);">blog</strong>!</h1>
+            <h4>This is where I share project writeups, tutorials, and notes.</h4>
+        </div>
+
+        <a href="https://github.com/Ewpratten/blog"><button class="btn btn-outline-secondary"><i
+                    class="fab fa-github"></i></button></a>
+        <a href="{{site.root_url}}"><button class="btn btn-info"><i class="fas fa-home"></i></button></a>
+        <a href="{{site.baseurl}}/feed.xml"><button class="btn btn-outline-secondary"><i
+                    class="fas fa-rss"></i></button></a>
+    </div>
 
     <hr>
 
     {% for post in site.posts %}
-        {{post.title}}
+    <a href="{{post.url}}" class="post-listing" style="margin:30px;">
+        <div style="max-width:800px;margin:auto;">
+
+            <h2>{{post.title}}</h2>
+            <small class="text-muted">{{post.date | date: "%Y-%m-%d"}} // {% include read_time.html %} read</small>
+
+            <p>{{post.excerpt}}</p>
+
+            <hr>
+        </div>
+    </a>
+
+
+
+
+
+    <!-- <div class="card" style="max-width:700px;margin:auto;margin-top:20px;margin-bottom:20px;">
+        <div class="card-body">
+            <h5 class="card-title">{{post.title}}</h5>
+            <p class="card-text">{{post.excerpt}}</p>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">{{post.date | date: "%Y-%m-%d"}} // {% include read_time.html %} read</small>
+
+            <a href="{{post.url}}"><button class="btn btn-outline-primary btn-sm"
+                    style="float:right;">Read Post</button></a>
+        </div>
+    </div> -->
     {% endfor %}
 
 </div>
