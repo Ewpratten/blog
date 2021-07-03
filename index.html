@@ -1,5 +1,6 @@
 ---
 layout: empty
+title: Home
 ---
 
 <hr style="border-color:var(--color-green);margin:0;border-width:5px;">
@@ -8,21 +9,22 @@ layout: empty
 
     <div id="main-heading" style="text-align: center;margin-top:15vh;margin-bottom: 5vh;">
         <div style="margin-bottom: 5vh;">
-            <h1>Welcome to my <strong style="color:var(--color-green-darker);">blog</strong>!</h1>
+            <h1>Welcome to my <strong style="color:var(--color-green-x-darker);">blog</strong>!</h1>
             <h4>This is where I share project writeups, tutorials, and notes.</h4>
         </div>
 
-        <a href="https://github.com/Ewpratten/blog"><button class="btn btn-outline-secondary"><i
-                    class="fab fa-github"></i></button></a>
-        <a href="{{site.root_url}}"><button class="btn btn-info"><i class="fas fa-home"></i></button></a>
-        <a href="{{site.baseurl}}/feed.xml"><button class="btn btn-outline-secondary"><i
+        <a href="https://github.com/Ewpratten/blog" aria-label="View source code"><button class="btn btn-outline-secondary"
+                aria-label="View source code"><i class="fab fa-github"></i></button></a>
+        <a href="{{site.root_url}}" aria-label="Go to retrylife.ca"><button class="btn btn-info" aria-label="Go to retrylife.ca"><i
+                    class="fas fa-home"></i></button></a>
+        <a href="{{site.baseurl}}/feed.xml" aria-label="RSS feed"><button class="btn btn-outline-secondary" aria-label="RSS feed"><i
                     class="fas fa-rss"></i></button></a>
     </div>
 
     <hr>
 
     {% for post in site.posts %}
-    <a href="{{post.url}}" class="post-listing" style="margin:30px;">
+    <a href="{{post.url}}" class="post-listing" style="margin:30px;" aria-label="Blog Post: {{post.title}}">
         <div style="max-width:800px;margin:auto;">
 
             <h2>{{post.title}}</h2>
@@ -33,23 +35,6 @@ layout: empty
             <hr>
         </div>
     </a>
-
-
-
-
-
-    <!-- <div class="card" style="max-width:700px;margin:auto;margin-top:20px;margin-bottom:20px;">
-        <div class="card-body">
-            <h5 class="card-title">{{post.title}}</h5>
-            <p class="card-text">{{post.excerpt}}</p>
-        </div>
-        <div class="card-footer">
-            <small class="text-muted">{{post.date | date: "%Y-%m-%d"}} // {% include read_time.html %} read</small>
-
-            <a href="{{post.url}}"><button class="btn btn-outline-primary btn-sm"
-                    style="float:right;">Read Post</button></a>
-        </div>
-    </div> -->
     {% endfor %}
 
 </div>

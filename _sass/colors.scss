@@ -1,6 +1,7 @@
 :root{
     --color-green: #8ADB96;
     --color-green-darker: #74b87e;
+    --color-green-x-darker: #45804e;
     --color-yellow: #D9B930;
     --color-sky: #7FD2DB;
     --color-pink: #DB91A2;
@@ -8,4 +9,8 @@
     --color-coal: #212529;
     --color-coal-light: #212529cb;
     --color-coal-lighter: rgba(33, 37, 41, 0.329);
+}
+
+.markdown-body a {
+    color: #00418a;
 }
