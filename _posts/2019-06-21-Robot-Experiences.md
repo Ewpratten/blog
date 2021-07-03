@@ -6,7 +6,7 @@ date:   2019-06-21 15:14:00
 tags: frc
 ---
 
-Over the past two years (2018 / 2019), I have been a member of my school's [FRC](https://www.firstinspires.org/robotics/frc) team, [Raider Robotics](frc5024.github.io). Specifically, a programmer.
+Over the past two years (2018 / 2019), I have been a member of my school's [FRC](https://www.firstinspires.org/robotics/frc) team, [Raider Robotics](https://frc5024.github.io). Specifically, a programmer.
 
 ## My roles
 In my first year, I joined the team as a programmer and had a fun time learning about embedded programming and development with hardware. Then, in my second year, I was promoted to programming co-lead along with [@slownie](https://github.com/slownie). I much preferred my second season because I had a better understanding of the technology I was working with, and we got to play with some cool tools throughout the season.
