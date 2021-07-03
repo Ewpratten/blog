@@ -5,6 +5,7 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.retrylife.ca"
 root_url: "https://retrylife.ca"
+permalink: /blog/:year/:month/:day/:slug
 
 markdown: kramdown
 kramdown:
