@@ -1,0 +1,12 @@
+.navbar {
+
+  .navbar-toggler{
+    border:none;
+    color:unset;
+  }
+
+  transition: box-shadow 0.3s cubic-bezier(0.2, 0, 0, 1);
+  &.--not-top {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  }
+}
