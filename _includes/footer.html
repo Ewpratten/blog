@@ -10,7 +10,10 @@
             <div class="col-sm footer-socials">
                 {% for social in site.data.socials %}
                     <a href="{{social.url}}"><i class="fab fa-{{social.icon}}"></i></a>
-                {% endfor %}
+                {% endfor %}  
+                {% if site.show_rss %}           
+                <a href="{{site.baseurl}}/feed.xml"><i class="fas fa-rss"></i></a>       
+                {% endif %}
             </div>
             <div class="col-sm">
             </div>
