@@ -6,7 +6,7 @@ description: >-
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://blog.retrylife.ca"
 root_url: "https://retrylife.ca"
-permalink: /blog/:year/:month/:day/:slug
+permalink: /:year/:month/:day/:slug
 
 ga_analytics: G-7GDG18PD12
 
